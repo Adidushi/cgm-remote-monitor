@@ -303,12 +303,13 @@ To learn more about the Nightscout API, visit https://YOUR-SITE.com/api-docs.htm
   * `SECURE_CSP` (`false`) - Add Content Security Policy headers. Possible values `false`, or `true`.
   * `SECURE_CSP_REPORT_ONLY` (`false`) - If set to `true` allows to experiment with policies by monitoring (but not enforcing) their effects. Possible values `false`, or `true`.
   
-  ### Views
+### Views
 
   There are a few alternate web views available from the main menu that display a simplified BG stream. (If you launch one of these in a fullscreen view in iOS, you can use a left-to-right swipe gesture to exit the view.)
   * `Clock` - Shows current BG, trend arrow, and time of day. Grey text on a black background.
   * `Color` - Shows current BG and trend arrow. White text on a background that changes color to indicate current BG threshold (green = in range; blue = below range; yellow = above range; red = urgent below/above).
   * `Simple` - Shows current BG. Grey text on a black background.
+  * Optional configuration: set `SHOW_CLOCK_CLOSEBUTTON` (`true`) to `false` to hide the small X button to close the views
 
 ### Plugins
 
@@ -483,6 +484,7 @@ To learn more about the Nightscout API, visit https://YOUR-SITE.com/api-docs.htm
   * `OPENAPS_PRED_ACOB_COLOR` (`#FB8C0080`) - The color to use for ACOB prediction lines. Same format as above.
   * `OPENAPS_PRED_ZT_COLOR` (`#00d2d2`) - The color to use for ZT prediction lines. Same format as above.
   * `OPENAPS_PRED_UAM_COLOR` (`#c9bd60`) - The color to use for UAM prediction lines. Same format as above.
+  * `OPENAPS_COLOR_PREDICTION_LINES` (`true`) - Enables / disables the colored lines vs the classic purple color.
 
 
  Also see [Pushover](#pushover) and [IFTTT Maker](#ifttt-maker).
